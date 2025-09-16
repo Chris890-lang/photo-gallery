@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Classroom Gallery</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      padding: 1rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #333;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .photo-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .photo-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .caption {
+      padding: 0.8rem;
+      font-size: 1rem;
+      color: #444;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.4rem; }
+      .caption { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📸 SCIENCE</h1>
+  </header>
+
+  <div class="gallery">
+    <div class="photo-card">
+      <img src="1234.jpg" alt="Quantum Lab Setup">
+      <div class="caption">Photo 1: THIS HOW IT WORKS</div>
+    </div>
+    <div class="photo-card">
+      <img src="12345.jpg" alt="Student Activity">
+      <div class="caption">Photo 2: THIS HOW IT WORKS</div>
+    </div>
+  </div>
+</body>
+</html>
