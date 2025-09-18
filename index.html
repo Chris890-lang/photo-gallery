@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantum Classroom Gallery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Incredible India: Regional Wonders</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -15,11 +15,42 @@
     header {
       text-align: center;
       margin-bottom: 2rem;
+      background: linear-gradient(to right, #ff6f61, #ffcc80);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     h1 {
-      font-size: 1.8rem;
-      color: #333;
+      font-size: 2.4rem;
+      color: white;
+      text-shadow: 2px 2px 4px #333;
+      margin: 0;
     }
+    header p {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-top: 0.5rem;
+    }
+
+    .region {
+      margin-bottom: 3rem;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .north { background: linear-gradient(135deg, #e0f7fa, #b2ebf2); }
+    .south { background: linear-gradient(135deg, #fce4ec, #f8bbd0); }
+    .east  { background: linear-gradient(135deg, #f3e5f5, #ce93d8); }
+    .west  { background: linear-gradient(135deg, #fff3e0, #ffcc80); }
+
+    .region h2 {
+      font-size: 1.6rem;
+      color: #333;
+      text-align: center;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 1px #ccc;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -28,8 +59,16 @@
     .photo-card {
       background: #fff;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
       overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .photo-card:hover {
+      transform: translateY(-5px);
+    }
+    .photo-card a {
+      text-decoration: none;
+      color: inherit;
     }
     .photo-card img {
       width: 100%;
@@ -41,25 +80,99 @@
       font-size: 1rem;
       color: #444;
     }
+    .video-button {
+      display: block;
+      margin: 0.8rem auto 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      font-weight: bold;
+      width: fit-content;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .video-button:hover {
+      background-color: #e64a19;
+    }
+
     @media (max-width: 600px) {
-      h1 { font-size: 1.4rem; }
+      h1 { font-size: 1.6rem; }
       .caption { font-size: 0.95rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>📸 SCIENCE</h1>
+    <h1>📸 Incredible India: Regional Wonders</h1>
+    <p>Journey through the soul of India—where every region tells a timeless story through its monuments.</p>
   </header>
 
-  <div class="gallery">
-    <div class="photo-card">
-      <img src="1234.jpg" alt="Quantum Lab Setup">
-      <div class="caption">Photo 1: THIS HOW IT WORKS</div>
+  <!-- North India -->
+  <div class="region north">
+    <h2>🧭 North India</h2>
+    <div class="gallery">
+      <div class="photo-card">
+        <img src="1t.jpg" alt="Taj Mahal, Agra">
+        <div class="caption">
+          <strong>Name:</strong> Taj Mahal<br>
+          <strong>Place:</strong> Agra<br>
+          <strong>Location:</strong> Uttar Pradesh, North India<br>
+          <strong>Story:</strong> Built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, the Taj Mahal stands as a poetic tribute to eternal love, shimmering in white marble on the banks of the Yamuna.
+        </div>
+        <a class="video-button" href="https://www.youtube.com/watch?v=49HTIoCccDY" target="_blank">▶ Watch Taj Mahal Tour</a>
+      </div>
     </div>
-    <div class="photo-card">
-      <img src="12345.jpg" alt="Student Activity">
-      <div class="caption">Photo 2: THIS HOW IT WORKS</div>
+  </div>
+
+  <!-- South India -->
+  <div class="region south">
+    <h2>🌴 South India</h2>
+    <div class="gallery">
+      <div class="photo-card">
+        <img src="2.jpg" alt="Meenakshi Temple, Madurai">
+        <div class="caption">
+          <strong>Name:</strong> Meenakshi Amman Temple<br>
+          <strong>Place:</strong> Madurai<br>
+          <strong>Location:</strong> Tamil Nadu, South India<br>
+          <strong>Story:</strong> A kaleidoscope of color and devotion, Meenakshi Temple is a sacred marvel where thousands of sculptures narrate divine tales under towering gopurams.
+        </div>
+        <a class="video-button" href="https://www.youtube.com/watch?v=uGHfjT_ny8Q" target="_blank">▶ Watch Meenakshi Temple Tour</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- East India -->
+  <div class="region east">
+    <h2>🌞 East India</h2>
+    <div class="gallery">
+      <div class="photo-card">
+        <img src="Sunt.jpg" alt="Konark Sun Temple, Odisha">
+        <div class="caption">
+          <strong>Name:</strong> Konark Sun Temple<br>
+          <strong>Place:</strong> Konark<br>
+          <strong>Location:</strong> Odisha, East India<br>
+          <strong>Story:</strong> Designed as a colossal chariot for the Sun God Surya, this 13th-century temple gallops through time with stone wheels, horses, and celestial carvings.
+        </div>
+        <a class="video-button" href="https://www.youtube.com/watch?v=KnyTkLCW-UA" target="_blank">▶ Watch Konark Temple Tour</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- West India -->
+  <div class="region west">
+    <h2>🌊 West India</h2>
+    <div class="gallery">
+      <div class="photo-card">
+        <img src="4f.jpg" alt="Gateway of India, Mumbai">
+        <div class="caption">
+          <strong>Name:</strong> Gateway of India<br>
+          <strong>Place:</strong> Mumbai<br>
+          <strong>Location:</strong> Maharashtra, West India<br>
+          <strong>Story:</strong> Overlooking the Arabian Sea, the Gateway of India was built to welcome British royalty and now stands as a proud symbol of Mumbai’s colonial past and vibrant present.
+        </div>
+        <a class="video-button" href="https://www.youtube.com/watch?v=LFLTXt0q5lQ" target="_blank">▶ Watch Gateway of India Tour</a>
+      </div>
     </div>
   </div>
 </body>
